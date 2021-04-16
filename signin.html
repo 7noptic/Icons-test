@@ -2178,69 +2178,32 @@
     <div class="headcrumbs kama_breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
       <div class="container"><span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="https://woo-kosmetka.webdevlair.com" itemprop="item"><span itemprop="name">Главная</span> </a></span><span class="kb_sep"></span> <span class="kb_title">Новинки</span></div>
     </div>
-    <section class="order">
+    <section class="form__sign">
       <div class="container">
-        <div class="selection-result__more selection-result__title">
-          <div class="selection-result__border"><img src="img/sel2.svg" alt=""></div>
-          <h1 class="title title-center">Оформление заказа</h1>
-          <div class="selection-result__border"><img src="img/sel2.svg" alt=""></div>
-        </div>
-        <div class="row justify-content-center">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 pb-0 pb-lg-5">
+            <h1 class="title title-center">Личный кабинет</h1>
+          </div>
           <div class="col-12 col-xl-8">
-            <div class="order__form">
-              <form action="post">
-                <h2 class="order__subtitle">ИНФОРМАЦИЯ О ПОКУПАТЕЛЕ</h2>
-                <div class="order__50p"><input type="text" class="form-control form__input" required>
-                  <div class="placeholder">Фамилия, имя, отчество <span class="red">*</span></div>
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div class="form__wrapper form__wrapper-short">
+                  <form action="post">
+                    <h2 class="form__title">Если вы ранее уже регистрировались на сайте</h2><input id="your-login" type="text" placeholder="Email или телефон" class="form-control form__input"> <label for="your-login">Введите email или телефон без пробелов начиная с +7, пример: +79003001020</label> <input type="password" placeholder="Пароль" class="form-control form__input"> <button type="submit" class="btn form__btn" value="ОТПРАВИТЬ">ВОЙТИ</button> <a href="#" class="form__link js-reset-pass">Забыли пароль?</a>
+                  </form>
                 </div>
-                <div class="order__25p"><input type="tel" class="form-control form__input" required>
-                  <div class="placeholder">+7 (999) 111-11-11 <span class="red">*</span></div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="form__wrapper form__wrapper-short">
+                  <form action="post">
+                    <h2 class="form__title">Если вы впервые на сайте пройдите регистрацию</h2>
+                    <nav class="form-tab"><a href="#" class="form-tab__link js-form-link">По телефону</a> <a href="#" class="form-tab__link js-form-link">По e-mail</a></nav><input type="text" placeholder="Ваше имя Имя" class="form-control form__input">
+                    <div class="tab js-form-tab"><input type="tel" placeholder="Ваш телефон" class="form-control form__input"></div>
+                    <div class="tab js-form-tab"><input type="email" placeholder="Ваш email" class="form-control form__input"></div><button type="submit" class="btn form__btn mb-2" value="ОТПРАВИТЬ">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                    <p class="form__agreement">Я согласен с условиями предоставления услуг и обработкой моих персональных данных при нажатии "Зарегистрироваться"</p>
+                  </form>
                 </div>
-                <div class="order__25p"><input type="email" class="form-control form__input" required>
-                  <div class="placeholder">Email <span class="red">*</span></div>
-                </div>
-                <h2 class="order__subtitle">ДОСТАВКА</h2>
-                <div class="order__40p"><select class="form-control form__input">
-                    <option value="Кировская область" selected="selected">Кировская область</option>
-                    <option value="фывадфывжа">фывалфыдважфыдвал</option>
-                    <option value="фывадфывжа">фывалфыдважфыдвал</option>
-                    <option value="фывадфывжа">фывалфыдважфыдвал</option>
-                    <option value="фывадфывжа">фывалфыдважфыдвал</option>
-                  </select></div>
-                <div class="order__60p"><input type="text" class="form-control form__input" placeholder="Город, улица, дом, строение, корпус, квартира"></div>
-                <h2 class="order__subtitle">ОПЛАТА</h2>
-                <div class="order-check">
-                  <div class="order-check__item"><img src="img/card.svg" alt=""> <input type="radio" name="your-check-pay" checked="checked" id="check-card"> <label for="check-card">Картой онлайн</label></div>
-                  <div class="order-check__item"><img src="img/nal.svg" alt=""> <input type="radio" name="your-check-pay" checked="checked" id="check-nal"> <label for="check-nal">Наличными</label></div>
-                  <div class="order-check__item"><img src="img/bank.svg" alt=""> <input type="radio" name="your-check-pay" checked="checked" id="check-bank"> <label for="check-bank">По счёту</label></div>
-                </div>
-                <h2 class="order__subtitle">КОММЕНТАРИИ К ЗАКАЗУ</h2><textarea name="your-quest" cols="30" rows="10" class="form-control form__input order__textarea" placeholder="Расскажите о пожеланиях к заказу или как улучшить работу сайта"></textarea>
-              </form>
-            </div>
-            <div class="order-result">
-              <div class="order-result__item">
-                <div class="order-result__text">Сумма товаров</div>
-                <div class="order-result__price"><span>1660 ₽</span> 1660 ₽</div>
               </div>
-              <div class="order-result__item">
-                <div class="order-result__text">Доставка</div>
-                <div class="order-result__price">+660 ₽</div>
-              </div>
-              <div class="order-result__item">
-                <div class="order-result__text">Итоговая скидка</div>
-                <div class="order-result__price">-66 ₽</div>
-              </div>
-              <div class="order-result__item">
-                <div class="order-result__text-b">ИТОГО</div>
-                <div class="order-result__price-b">1660 ₽</div>
-              </div>
-              <div class="order-result__result">
-                <div class="order-result__left">Онлайн оплата 5%:<br>ВЫГОДА 77 руб.</div>
-                <div class="order-result__right"><img src="img/orderzal.svg" alt=""> <span>Ближайшая доставка<br>17.09.2020 - 19.09.2020</span></div>
-              </div>
-            </div>
-            <div class="order-btn"><a href="#" class="btn order__btn">ОФОРМИТЬ ЗАКАЗ</a>
-              <p class="order__agreement">Я согласен с условиями предоставления услуг и обработкой<br>моих персональных данных при нажатии "Оформить заказ"</p>
             </div>
           </div>
         </div>

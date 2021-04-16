@@ -2178,69 +2178,510 @@
     <div class="headcrumbs kama_breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
       <div class="container"><span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="https://woo-kosmetka.webdevlair.com" itemprop="item"><span itemprop="name">Главная</span> </a></span><span class="kb_sep"></span> <span class="kb_title">Новинки</span></div>
     </div>
-    <section class="order">
+    <section class="profile">
       <div class="container">
-        <div class="selection-result__more selection-result__title">
-          <div class="selection-result__border"><img src="img/sel2.svg" alt=""></div>
-          <h1 class="title title-center">Оформление заказа</h1>
-          <div class="selection-result__border"><img src="img/sel2.svg" alt=""></div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-12 col-xl-8">
-            <div class="order__form">
-              <form action="post">
-                <h2 class="order__subtitle">ИНФОРМАЦИЯ О ПОКУПАТЕЛЕ</h2>
-                <div class="order__50p"><input type="text" class="form-control form__input" required>
-                  <div class="placeholder">Фамилия, имя, отчество <span class="red">*</span></div>
+        <div class="row">
+          <div class="col-12 col-lg-3">
+            <nav class="profile-nav"><a href="#" class="profile-nav__link js-profile-link">Мои данные</a> <a href="#" class="profile-nav__link js-profile-link">Мои заказы</a> <a href="#" class="profile-nav__link js-profile-link">Программа лояльности</a></nav>
+          </div>
+          <div class="col-12 col-lg-9 d-flex flex-wrap">
+            <div class="tab js-profile-tab">
+              <div class="profile__photo"><img src="img/ava2.jpg" alt=""></div>
+              <div class="profile-data">
+                <div class="row">
+                  <div class="col-12 col-sm-3">
+                    <div class="profile-data__text">Имя</div>
+                  </div>
+                  <div class="col-12 col-sm-9">
+                    <div class="profile-data__text-b">Артём</div>
+                  </div>
+                  <div class="col-12 col-sm-3">
+                    <div class="profile-data__text">Отчество</div>
+                  </div>
+                  <div class="col-12 col-sm-9">
+                    <div class="profile-data__text-b">Опарин</div>
+                  </div>
+                  <div class="col-12 col-sm-3">
+                    <div class="profile-data__text">Фамилия</div>
+                  </div>
+                  <div class="col-12 col-sm-9">
+                    <div class="profile-data__text-b">Эдуардович</div>
+                  </div>
+                  <div class="col-12 col-sm-3">
+                    <div class="profile-data__text">Фамилия</div>
+                  </div>
+                  <div class="col-12 col-sm-9">
+                    <div class="profile-data__text-b">rustle_92@yandex.ru</div>
+                  </div>
+                  <div class="col-12 col-sm-3">
+                    <div class="profile-data__text">Телефон</div>
+                  </div>
+                  <div class="col-12 col-sm-9">
+                    <div class="profile-data__text-b">8 953 948 23 85</div>
+                  </div>
+                  <div class="col-12 col-sm-3">
+                    <div class="profile-data__text">Адрес</div>
+                  </div>
+                  <div class="col-12 col-sm-9">
+                    <div class="profile-data__text-b">66000, Россия, Кировская область, Слободской район, деревня Зониха, ул. Садовая, дом 11 квартира 1</div>
+                  </div>
+                  <div class="col-12 col-sm-3"></div>
+                  <div class="col-12 col-sm-9"><a href="#" class="btn btn-blueborder profile-data__btn js-personal-data">РЕДАКТИРОВАТЬ</a></div>
                 </div>
-                <div class="order__25p"><input type="tel" class="form-control form__input" required>
-                  <div class="placeholder">+7 (999) 111-11-11 <span class="red">*</span></div>
-                </div>
-                <div class="order__25p"><input type="email" class="form-control form__input" required>
-                  <div class="placeholder">Email <span class="red">*</span></div>
-                </div>
-                <h2 class="order__subtitle">ДОСТАВКА</h2>
-                <div class="order__40p"><select class="form-control form__input">
-                    <option value="Кировская область" selected="selected">Кировская область</option>
-                    <option value="фывадфывжа">фывалфыдважфыдвал</option>
-                    <option value="фывадфывжа">фывалфыдважфыдвал</option>
-                    <option value="фывадфывжа">фывалфыдважфыдвал</option>
-                    <option value="фывадфывжа">фывалфыдважфыдвал</option>
-                  </select></div>
-                <div class="order__60p"><input type="text" class="form-control form__input" placeholder="Город, улица, дом, строение, корпус, квартира"></div>
-                <h2 class="order__subtitle">ОПЛАТА</h2>
-                <div class="order-check">
-                  <div class="order-check__item"><img src="img/card.svg" alt=""> <input type="radio" name="your-check-pay" checked="checked" id="check-card"> <label for="check-card">Картой онлайн</label></div>
-                  <div class="order-check__item"><img src="img/nal.svg" alt=""> <input type="radio" name="your-check-pay" checked="checked" id="check-nal"> <label for="check-nal">Наличными</label></div>
-                  <div class="order-check__item"><img src="img/bank.svg" alt=""> <input type="radio" name="your-check-pay" checked="checked" id="check-bank"> <label for="check-bank">По счёту</label></div>
-                </div>
-                <h2 class="order__subtitle">КОММЕНТАРИИ К ЗАКАЗУ</h2><textarea name="your-quest" cols="30" rows="10" class="form-control form__input order__textarea" placeholder="Расскажите о пожеланиях к заказу или как улучшить работу сайта"></textarea>
-              </form>
-            </div>
-            <div class="order-result">
-              <div class="order-result__item">
-                <div class="order-result__text">Сумма товаров</div>
-                <div class="order-result__price"><span>1660 ₽</span> 1660 ₽</div>
-              </div>
-              <div class="order-result__item">
-                <div class="order-result__text">Доставка</div>
-                <div class="order-result__price">+660 ₽</div>
-              </div>
-              <div class="order-result__item">
-                <div class="order-result__text">Итоговая скидка</div>
-                <div class="order-result__price">-66 ₽</div>
-              </div>
-              <div class="order-result__item">
-                <div class="order-result__text-b">ИТОГО</div>
-                <div class="order-result__price-b">1660 ₽</div>
-              </div>
-              <div class="order-result__result">
-                <div class="order-result__left">Онлайн оплата 5%:<br>ВЫГОДА 77 руб.</div>
-                <div class="order-result__right"><img src="img/orderzal.svg" alt=""> <span>Ближайшая доставка<br>17.09.2020 - 19.09.2020</span></div>
               </div>
             </div>
-            <div class="order-btn"><a href="#" class="btn order__btn">ОФОРМИТЬ ЗАКАЗ</a>
-              <p class="order__agreement">Я согласен с условиями предоставления услуг и обработкой<br>моих персональных данных при нажатии "Оформить заказ"</p>
+            <div class="tab js-profile-tab">
+              <div class="profile-table">
+                <div class="profile-table__header">
+                  <div class="profile-table__number">№ заказа</div>
+                  <div class="profile-table__date">Дата и время заказа</div>
+                  <div class="profile-table__status">Статус</div>
+                  <div class="profile-table__sum">Сумма, ₽</div>
+                  <div class="profile-table__pay">Способ оплаты</div>
+                </div>
+                <div class="profile-table__item">
+                  <div class="profile-header js-profile-table-link">
+                    <div class="profile-table__number">
+                      <div class="profile-table__number-text">№ заказа</div>112866
+                    </div>
+                    <div class="profile-table__date">
+                      <div class="profile-table__number-text">Дата и время заказа</div>06.03.2021
+                    </div>
+                    <div class="profile-table__status">
+                      <div class="profile-table__number-text">Статус</div>23:14
+                    </div>
+                    <div class="profile-table__sum">
+                      <div class="profile-table__number-text">Сумма, ₽</div>2086 ₽
+                    </div>
+                    <div class="profile-table__pay">
+                      <div class="profile-table__number-text">Способ оплаты</div>Наложенный платеж интернет-магазин
+                    </div>
+                  </div>
+                  <div class="profile-content tab js-profile-table-content">
+                    <div class="profile-content__info">
+                      <div class="profile-content__update">Время последнего обновления: 06.03.2020 23:44</div>
+                      <div class="profile-content__track">Номер отслеживания: <span>не доступен</span></div>
+                    </div>
+                    <div class="profile-content__info">
+                      <div class="profile-content__name">
+                        <div class="profile-content__img"><img src="img/pric.jpg" alt=""></div>
+                        <div class="profile-content__nepridumalname">Троица пресвятая в живописном стиле, икона печатная, литография с тиснением <span>Артикул: 987 99 07</span></div>
+                      </div>
+                      <div class="profile-content__count">1 шт</div>
+                      <div class="profile-content__sum">2086 ₽</div>
+                      <div class="profile-content__pay"><a href="#" class="btn btn-blueborder profile-content__btn">оставить отзыв к товару</a></div>
+                    </div>
+                    <div class="profile-content__info align-items-start">
+                      <div class="profile-content__img"></div>
+                      <div class="profile-content__data">
+                        <div class="row">
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Общая сумма товаров:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">2086 ₽</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Стоимость доставки:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">459 ₽</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Получатель:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">rustle_92@yandex.ru</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Телефон:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">+79000886666</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Адрес доставки:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b"><span>не указан</span></div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Оплата</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">Наложеный платёж</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Способ доставки:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">Почта России</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="profile-content__result">ИТОГО: <span>2086 ₽</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-table__item">
+                  <div class="profile-header js-profile-table-link">
+                    <div class="profile-table__number">
+                      <div class="profile-table__number-text">№ заказа</div>112866
+                    </div>
+                    <div class="profile-table__date">
+                      <div class="profile-table__number-text">Дата и время заказа</div>06.03.2021
+                    </div>
+                    <div class="profile-table__status">
+                      <div class="profile-table__number-text">Статус</div>23:14
+                    </div>
+                    <div class="profile-table__sum">
+                      <div class="profile-table__number-text">Сумма, ₽</div>2086 ₽
+                    </div>
+                    <div class="profile-table__pay">
+                      <div class="profile-table__number-text">Способ оплаты</div>Наложенный платеж интернет-магазин
+                    </div>
+                  </div>
+                  <div class="profile-content tab js-profile-table-content">
+                    <div class="profile-content__info">
+                      <div class="profile-content__update">Время последнего обновления: 06.03.2020 23:44</div>
+                      <div class="profile-content__track">Номер отслеживания: <span>не доступен</span></div>
+                    </div>
+                    <div class="profile-content__info">
+                      <div class="profile-content__name">
+                        <div class="profile-content__img"><img src="img/pric.jpg" alt=""></div>
+                        <div class="profile-content__nepridumalname">Троица пресвятая в живописном стиле, икона печатная, литография с тиснением <span>Артикул: 987 99 07</span></div>
+                      </div>
+                      <div class="profile-content__count">1 шт</div>
+                      <div class="profile-content__sum">2086 ₽</div>
+                      <div class="profile-content__pay"><a href="#" class="btn btn-blueborder profile-content__btn">оставить отзыв к товару</a></div>
+                    </div>
+                    <div class="profile-content__info align-items-start">
+                      <div class="profile-content__img"></div>
+                      <div class="profile-content__data">
+                        <div class="row">
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Общая сумма товаров:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">2086 ₽</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Стоимость доставки:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">459 ₽</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Получатель:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">rustle_92@yandex.ru</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Телефон:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">+79000886666</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Адрес доставки:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b"><span>не указан</span></div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Оплата</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">Наложеный платёж</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Способ доставки:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">Почта России</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="profile-content__result">ИТОГО: <span>2086 ₽</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-table__item">
+                  <div class="profile-header js-profile-table-link">
+                    <div class="profile-table__number">
+                      <div class="profile-table__number-text">№ заказа</div>112866
+                    </div>
+                    <div class="profile-table__date">
+                      <div class="profile-table__number-text">Дата и время заказа</div>06.03.2021
+                    </div>
+                    <div class="profile-table__status">
+                      <div class="profile-table__number-text">Статус</div>23:14
+                    </div>
+                    <div class="profile-table__sum">
+                      <div class="profile-table__number-text">Сумма, ₽</div>2086 ₽
+                    </div>
+                    <div class="profile-table__pay">
+                      <div class="profile-table__number-text">Способ оплаты</div>Наложенный платеж интернет-магазин
+                    </div>
+                  </div>
+                  <div class="profile-content tab js-profile-table-content">
+                    <div class="profile-content__info">
+                      <div class="profile-content__update">Время последнего обновления: 06.03.2020 23:44</div>
+                      <div class="profile-content__track">Номер отслеживания: <span>не доступен</span></div>
+                    </div>
+                    <div class="profile-content__info">
+                      <div class="profile-content__name">
+                        <div class="profile-content__img"><img src="img/pric.jpg" alt=""></div>
+                        <div class="profile-content__nepridumalname">Троица пресвятая в живописном стиле, икона печатная, литография с тиснением <span>Артикул: 987 99 07</span></div>
+                      </div>
+                      <div class="profile-content__count">1 шт</div>
+                      <div class="profile-content__sum">2086 ₽</div>
+                      <div class="profile-content__pay"><a href="#" class="btn btn-blueborder profile-content__btn">оставить отзыв к товару</a></div>
+                    </div>
+                    <div class="profile-content__info align-items-start">
+                      <div class="profile-content__img"></div>
+                      <div class="profile-content__data">
+                        <div class="row">
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Общая сумма товаров:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">2086 ₽</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Стоимость доставки:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">459 ₽</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Получатель:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">rustle_92@yandex.ru</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Телефон:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">+79000886666</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Адрес доставки:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b"><span>не указан</span></div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Оплата</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">Наложеный платёж</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Способ доставки:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">Почта России</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="profile-content__result">ИТОГО: <span>2086 ₽</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-table__item">
+                  <div class="profile-header js-profile-table-link">
+                    <div class="profile-table__number">
+                      <div class="profile-table__number-text">№ заказа</div>112866
+                    </div>
+                    <div class="profile-table__date">
+                      <div class="profile-table__number-text">Дата и время заказа</div>06.03.2021
+                    </div>
+                    <div class="profile-table__status">
+                      <div class="profile-table__number-text">Статус</div>23:14
+                    </div>
+                    <div class="profile-table__sum">
+                      <div class="profile-table__number-text">Сумма, ₽</div>2086 ₽
+                    </div>
+                    <div class="profile-table__pay">
+                      <div class="profile-table__number-text">Способ оплаты</div>Наложенный платеж интернет-магазин
+                    </div>
+                  </div>
+                  <div class="profile-content tab js-profile-table-content">
+                    <div class="profile-content__info">
+                      <div class="profile-content__update">Время последнего обновления: 06.03.2020 23:44</div>
+                      <div class="profile-content__track">Номер отслеживания: <span>не доступен</span></div>
+                    </div>
+                    <div class="profile-content__info">
+                      <div class="profile-content__name">
+                        <div class="profile-content__img"><img src="img/pric.jpg" alt=""></div>
+                        <div class="profile-content__nepridumalname">Троица пресвятая в живописном стиле, икона печатная, литография с тиснением <span>Артикул: 987 99 07</span></div>
+                      </div>
+                      <div class="profile-content__count">1 шт</div>
+                      <div class="profile-content__sum">2086 ₽</div>
+                      <div class="profile-content__pay"><a href="#" class="btn btn-blueborder profile-content__btn">оставить отзыв к товару</a></div>
+                    </div>
+                    <div class="profile-content__info align-items-start">
+                      <div class="profile-content__img"></div>
+                      <div class="profile-content__data">
+                        <div class="row">
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Общая сумма товаров:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">2086 ₽</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Стоимость доставки:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">459 ₽</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Получатель:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">rustle_92@yandex.ru</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Телефон:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">+79000886666</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Адрес доставки:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b"><span>не указан</span></div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Оплата</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">Наложеный платёж</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text">Способ доставки:</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="profile-content__text-b">Почта России</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="profile-content__result">ИТОГО: <span>2086 ₽</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab js-profile-tab">
+              <div class="profile-table">
+                <div class="profile-table__header">
+                  <div class="profile-table__data">Дата</div>
+                  <div class="profile-table__num">#</div>
+                  <div class="profile-table__plus">Приход</div>
+                  <div class="profile-table__minus">Расход</div>
+                  <div class="profile-table__balance">Баланс</div>
+                </div>
+                <div class="profile-table__item">
+                  <div class="profile-header">
+                    <div class="profile-table__data">
+                      <div class="profile-table__number-text">Дата</div>1 марта
+                    </div>
+                    <div class="profile-table__num">
+                      <div class="profile-table__number-text">#</div>2332
+                    </div>
+                    <div class="profile-table__plus">
+                      <div class="profile-table__number-text">Приход</div>25000 ₽
+                    </div>
+                    <div class="profile-table__minus">
+                      <div class="profile-table__number-text">Расход</div>1566 ₽
+                    </div>
+                    <div class="profile-table__balance">
+                      <div class="profile-table__number-text">Баланс</div>2323 ₽
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-table__item">
+                  <div class="profile-header">
+                    <div class="profile-table__data">
+                      <div class="profile-table__number-text">Дата</div>1 марта
+                    </div>
+                    <div class="profile-table__num">
+                      <div class="profile-table__number-text">#</div>2332
+                    </div>
+                    <div class="profile-table__plus">
+                      <div class="profile-table__number-text">Приход</div>25000 ₽
+                    </div>
+                    <div class="profile-table__minus">
+                      <div class="profile-table__number-text">Расход</div>1566 ₽
+                    </div>
+                    <div class="profile-table__balance">
+                      <div class="profile-table__number-text">Баланс</div>2323 ₽
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-table__item">
+                  <div class="profile-header">
+                    <div class="profile-table__data">
+                      <div class="profile-table__number-text">Дата</div>1 марта
+                    </div>
+                    <div class="profile-table__num">
+                      <div class="profile-table__number-text">#</div>2332
+                    </div>
+                    <div class="profile-table__plus">
+                      <div class="profile-table__number-text">Приход</div>25000 ₽
+                    </div>
+                    <div class="profile-table__minus">
+                      <div class="profile-table__number-text">Расход</div>1566 ₽
+                    </div>
+                    <div class="profile-table__balance">
+                      <div class="profile-table__number-text">Баланс</div>2323 ₽
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-table__item">
+                  <div class="profile-header">
+                    <div class="profile-table__data">
+                      <div class="profile-table__number-text">Дата</div>1 марта
+                    </div>
+                    <div class="profile-table__num">
+                      <div class="profile-table__number-text">#</div>2332
+                    </div>
+                    <div class="profile-table__plus">
+                      <div class="profile-table__number-text">Приход</div>25000 ₽
+                    </div>
+                    <div class="profile-table__minus">
+                      <div class="profile-table__number-text">Расход</div>1566 ₽
+                    </div>
+                    <div class="profile-table__balance">
+                      <div class="profile-table__number-text">Баланс</div>2323 ₽
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-table__item">
+                  <div class="profile-header">
+                    <div class="profile-table__data">
+                      <div class="profile-table__number-text">Дата</div>1 марта
+                    </div>
+                    <div class="profile-table__num">
+                      <div class="profile-table__number-text">#</div>2332
+                    </div>
+                    <div class="profile-table__plus">
+                      <div class="profile-table__number-text">Приход</div>25000 ₽
+                    </div>
+                    <div class="profile-table__minus">
+                      <div class="profile-table__number-text">Расход</div>1566 ₽
+                    </div>
+                    <div class="profile-table__balance">
+                      <div class="profile-table__number-text">Баланс</div>2323 ₽
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
